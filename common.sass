@@ -1,0 +1,302 @@
+$main-blue: #5287F3
+$main-dark: #2F2F2F
+$main-dark2: darken(#2F2F2F, 5)
+$main-darker: #232323
+$main-darker2: darken(#232323, 3)
+$darker-1: darken(#bfbfbf, 10)
+$darker-2: darken(#d7d7d7, 10)
+// $main-font: 'Fira Sans light'
+$main-font: 'Roboto'
+
+.hidden
+  transform: rotateY(90deg)
+
+.shown
+  display: block
+
+*
+  // margin: 0
+
+html, body
+  padding: 0
+  margin: 0
+  width: 100%
+  height: 100%
+  font-family: $main-font, arial
+
+
+h1, h2, h3, h4, h5, p
+  padding: 0
+  margin: 0
+  font-weight: 400
+
+a
+  text-decoration: none
+
+.navbar
+  width: 100%
+  height: 50px
+  position: fixed
+  background-color: #ffffff
+  border-bottom: 1px solid lightgrey
+  z-index: 1000
+
+.navbar-roll
+  margin-left: 50px
+
+
+.logo-text
+  margin-top: 8px
+  margin-left: 20px
+  font-size: 14px
+  color: #636363
+  font-family: $main-font
+  font-weight: 400
+
+  p:first-child
+    font-weight: 500
+
+.search-form
+  display: block
+  position: absolute
+  width: 30%
+  height: 50px
+  max-width: 30%
+  top: 0
+  right: 0
+
+.search-wrapper
+  width: 100%
+  height: 50px
+
+.search-input
+  width: 65%
+  height: 50px
+  padding: 0
+  padding-left: 10px
+  border: none
+  border-left: 1px solid #d3d3d3
+  position: absolute
+  top: 0
+  right: 50px
+  //
+  font-size: 1.2em
+  font-weight: 100
+  color: #4a4a4a
+  outline: none
+
+.search-button
+  width: 50px
+  height: 50px
+  padding: 0
+  border: none
+  position: absolute
+  top: 0
+  right: 0
+  //
+  background-color: #4A4A4A
+  transition: background-color 120ms ease-in
+  outline: none
+
+  &:hover
+    cursor: pointer
+    background-color: darken(#4A4A4A, 10)
+
+  img
+    padding-left: 4px
+    //
+    transition: transform 100ms ease-in-out
+
+    &:active
+      transform: scale(0.8)
+
+.sidebar
+  width: 50px
+  height: 100%
+  position: fixed
+  background-color: $main-dark
+  z-index: 1000
+  // overflow: hidden
+
+.curtain
+  // display: none
+  position: fixed
+  top: 50px
+  left: 50px
+  width: 200px
+  height: 100%
+  background-color: $main-darker
+  //
+  transition: transform 150ms ease-out
+  -webkit-transition: transform 150ms ease-out
+  -moz-transition: transform 150ms ease-out
+  transform-origin: left
+  perspective: 200px
+
+#menuAnchor
+  transition: background-image 250ms ease-in-out
+  -moz-transition: background-image 250ms ease-in-out
+
+.menusvg
+  background-image: url(../img/menu.svg)
+
+
+.clearsvg
+  background-image: url(../img/clear.svg)
+
+
+.curtain-links
+  display: block
+  width: 100%
+  height: 49px
+  line-height: 50px
+  border-bottom: 1px solid darken(#1E1E1E, 2)
+
+  a
+    display: block
+    padding-left: 20px
+    color: #c3c1c1
+    font-family: $main-font
+    font-weight: 300
+    //
+    transition: background-color 120ms ease-in
+
+    &:hover
+      background-color: $main-dark
+
+    &:active
+      background-color: $main-blue
+
+.sidebar-squares
+  // display: flex
+  a
+    display: block
+    width: 44px
+    height: 49px
+    background-color: $main-dark
+    border-left: 3px solid $main-dark
+    border-right: 3px solid transparentize($main-dark, 1)
+    border-bottom: 1px solid darken($main-dark, 3)
+    transition: background-color 120ms ease-in, transform 150ms ease-in-out
+    overflow: hidden
+    background:
+      repeat: no-repeat
+      position: center
+
+    &:hover
+      background-color: $main-darker
+      // background: -moz-linear-gradient(left, #fff, #000)
+      // box-shadow: inset 25px 0px 40px -25px rgba(0,0,0,1)
+      border-left: 3px solid darken($main-blue, 10)
+
+    &:active
+      // transform: scale(0.7)
+      background-color: darken($main-blue, 25)
+
+.sb-squares-wrapper
+  overflow: hidden
+
+
+// ------------ BODY ------------
+
+.body-wrapper
+  width: 100%
+  height: 100%
+  background-color: #e8e7e7
+
+
+.body-container
+  // background-color: pink
+  margin: 0 auto
+  width: 812px
+  height: 80%
+  padding-top: 50px
+
+.body-heading
+  background-color: #f7f7f7
+  margin-top: 40px
+  padding: 5px 0 5px 15px
+  border-bottom: 1px solid $main-dark
+  // border-left: 1px solid $main-dark
+  h2
+    color: #2e2e2e
+    font-family: $main-font
+    font-weight: 400
+
+.plate-one, .plate-two, .plate-three
+  display: inline-block
+  position: relative
+  top: 40px
+  border-left: 3px solid $main-dark
+  background-color: #f4f4f4
+  // padding: 20px
+  transition: background-color 150ms ease-in
+
+.plate-container, .plate-container-small
+  position: absolute
+  background-color: transparentize(white, 0.3)
+  padding: 15px
+  overflow: hidden
+  border-radius: 12px 0 12px 0
+
+.plate-container
+  width: 360px - 20px
+  height: 100px
+  top: 160px
+  left: 10px
+
+.plate-container-small
+  width: 260px - 20px
+  height: 95px
+  top: 10px
+  right: 10px
+
+.plate-one
+  position: relative
+  width: 395px
+  height: 300px
+  float: left
+  left: 2px
+  //
+  background:
+    image: url(../img/circle1.svg)
+    repeat: no-repeat
+    position: center
+    size: 280px
+
+  &:hover
+    cursor: pointer
+    background-color: darken($main-blue, 15)
+
+
+.plate-two
+  right: 2px
+  width: 395px
+  height: 145px
+  float: right
+  margin-bottom: 10px
+  background:
+    image: url(../img/circle4.svg)
+    repeat: no-repeat
+    position: left
+    size: 115px
+
+  &:hover
+    cursor: pointer
+    background-color: darken($main-blue, 15)
+
+
+.plate-three
+  right: 2px
+  width: 395px
+  height: 145px
+  float: right
+  background:
+    image: url(../img/circle3.svg)
+    repeat: no-repeat
+    position: left
+    size: 115px
+
+  &:hover
+    cursor: pointer
+    background-color: darken($main-blue, 15)

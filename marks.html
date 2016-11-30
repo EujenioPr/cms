@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>here was title</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/common.css" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="navbar" >
+        <div class="navbar-roll">
+
+            <div class="logo-text">
+              <p>ЛКДУТ /</p><p>База даних студентів</p>
+            </div>
+
+            <div class="exit-form">
+              <button class="exit-btn">Вийти</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+
+      <div id="curtain" class="curtain rotated">
+        <div class="curtain-links">
+          <a href="./index.html">Головна</a>
+        </div>
+        <div class="curtain-links">
+          <a href="./marks.html">Оцінки</a>
+        </div>
+        <div class="curtain-links">
+          <a href="javascript:void(0)">Предмети</a>
+        </div>
+        <div class="curtain-links">
+          <a href="javascript:void(0)">Групи</a>
+        </div>
+        <div class="curtain-links">
+          <a href="javascript:void(0)">Студенти</a>
+        </div>
+        <div class="curtain-links">
+          <a href="javascript:void(0)">Накази</a>
+        </div>
+        <div class="curtain-links">
+            <a id="sidebarAdd">Додати <span id="sidebarAddSpan"> < </span> </a>
+            <ul id="sidebarUl" class="sidebar-ul hidden">
+              <li><a href="javascript:void(0)">- Студента</a></li>
+              <li><a href="javascript:void(0)">- Предмет</a></li>
+              <li><a href="javascript:void(0)">- Групу</a></li>
+              <li><a href="javascript:void(0)">- Наказ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-squares">
+          <div id="menu" class="sb-squares-wrapper">
+            <a id="menuAnchor" href="javascript:void(0)" class="menusvg"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a href="./index.html" style="background-image: url('img/main.svg');"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a href="./marks.html" style="background-image: url('img/person.svg');"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a href="javascript:void(0)" style="background-image: url('img/add_person.svg');"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a href="javascript:void(0)" style="background-image: url('img/group.svg');"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a href="javascript:void(0)" style="background-image: url('img/marks.svg');"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a href="javascript:void(0)" style="background-image: url('img/instruction.svg');"></a>
+          </div>
+          <div class="sb-squares-wrapper">
+            <a style="background-image: url('img/orders.svg');"></a>
+          </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="body-wrapper">
+      <div class="body-container">
+        <div class="heading">
+          <h1>Головна</h1>
+          <!-- <hr/> -->
+        </div>
+
+        <section class="marks-section">
+            <section class="marks-section-filter">
+                <h2>Фільтр:</h2>
+                <select class="marks-select">
+                    <option selected disabled><a href="javascript:void(0)">Спеціальність</a></option>
+                    <option><a href="javascript:void(0)">0.502340235 - lorem ipsum dolor sit amet</a></option>
+                    <option><a href="javascript:void(0)">0.123453463 - lorem ipsum dolor sit amet</a></option>
+                    <option><a href="javascript:void(0)">0.504520112 - lorem ipsum dolor sit amet</a></option>
+                    <option><a href="javascript:void(0)">0.101101001 - lorem ipsum dolor sit amet</a></option>
+                    <option><a href="javascript:void(0)">0.202020200 - lorem ipsum dolor sit amet</a></option>
+                </select><br>
+                <p class="throwed">5.05090308 – Монтаж, обслуговування та експлуатація апаратних засобів інформатизації</p>
+                <div class="marks-buttons">
+                    <h2>Групи:</h2>
+                    <button>OK-11</button>
+                    <button>OK-21</button>
+                    <button>OK-31</button>
+                    <button>OK-41</button>
+                    <hr><br>
+                    <h2>Семестр:</h2>
+                    <button>1 семестр</button>
+                    <button>2 семестр</button>
+                </div>
+            </section>
+
+            <section class="marks-table-section">
+
+                <table>
+                    <tr>
+                        <th>Прізвище, імя, По батькові</th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                        <th><div>Українська мова</div></th>
+                    </tr>
+
+                    <tr>
+                        <td>Хренова Гадя Петрович</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Хренова Гадя Петрович</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Хренова Гадя Петрович</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+
+                </table>
+
+            </section>
+        </section>
+
+
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
