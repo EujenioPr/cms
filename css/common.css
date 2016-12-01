@@ -165,7 +165,9 @@ a {
 .body-wrapper {
   width: calc(100% - 55px);
   min-height: 100%;
-  background-color: #e8e7e7;
+  /*background-color: #e8e7e7;*/
+  background-image: url(../img/background.png);
+  background-repeat: repeat;
   padding-left: 55px;
   /*background-color: #f7abf2;*/
 }
@@ -408,6 +410,8 @@ tr:nth-child(even) {
     background-color: #ccffd9;
     border-radius: 5px;
     padding: 10px;
+    /**/
+    font-weight: 300;
 }
 /* -- --*/
 
@@ -423,6 +427,9 @@ tr:nth-child(even) {
 
 .groups-checkbox input {
     margin-bottom: 30px;
+}
+.groups-checkbox button:nth-of-type(1) {
+    background-color: #2266f0;
 }
 
 .table-subjects-section {
@@ -452,8 +459,50 @@ tr:nth-child(even) {
     margin-right: 5px;
 }
 
+/* BLUE FANCY BUTTON */
+.submit-btn {
+  height: 34px;
+  width: 100px;
+  border: none;
+  border-radius: 1px;
+  background-color: #2266f0;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0s;
+  font-size: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  outline: none;
 
+}
 
+.submit-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+.submit-btn span::after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+
+}
+.submit-btn:hover span {
+    padding-right: 20px;
+}
+
+.submit-btn:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+.submit-btn:hover {
+    opacity: 0.9;
+}
+/* . . . . */
 
 
 
