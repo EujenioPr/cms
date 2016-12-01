@@ -305,7 +305,7 @@ a {
 
 }
 
-.marks-section-filter h2 {
+.filter-text {
     margin-bottom: 15px;
     font-weight: 300;
 }
@@ -342,16 +342,17 @@ a {
     margin-bottom: 30px;
 }
 
-.marks-buttons button {
+.marks-buttons button, .groups-checkbox button {
     border: none;
-    width: 80px;
+    min-width: 80px;
     height: 35px;
     background-color: #6a6a6a;
     color: #f1f1f1;
     border-radius: 3px;
     margin-right: 3px;
+    white-space: nowrap;
 }
-.marks-buttons button:hover {
+.marks-buttons button, .groups-checkbox button:hover {
     background-color: #5d5d5d;
     cursor: pointer;
 }
@@ -394,6 +395,13 @@ tr:nth-child(even) {
     background-color: #ededed;
 }
 
+.table-subjects tr th {
+    height: auto;
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: 400;
+}
+
 /* GREEN WARNING ( SUCCESS ) ON WEB HTML FORM */
 .throwed {
     display: inline-block;
@@ -402,6 +410,50 @@ tr:nth-child(even) {
     padding: 10px;
 }
 /* -- --*/
+
+.subjects-section {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.groups-checkbox {
+    margin-top: 30px;
+}
+
+.groups-checkbox input {
+    margin-bottom: 30px;
+}
+
+.table-subjects-section {
+    margin-top: 40px;
+}
+
+.table-select {
+    width: 20px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #ffffff;
+    /**/
+    color: #424242;
+    font-size: 15px;
+
+}
+
+.checkbox-bordered {
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    /*background-color: pink;*/
+    height: 20px;
+    padding: 5px 10px 5px 5px;
+    margin-right: 5px;
+}
+
+
+
 
 
 
