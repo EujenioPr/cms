@@ -94,13 +94,12 @@
     <div class="body-wrapper">
       <div class="body-container">
         <div class="heading">
-          <h1>Предмети</h1>
+          <h1>Групи</h1>
           <!-- <hr/> -->
         </div>
 
         <section class="subjects-section">
             <section class="subjects-section-filter">
-                <h2 class="filter-text">Спеціальність:</h2>
                 <select class="marks-select">
                     <option selected disabled><a href="javascript:void(0)">Спеціальність</a></option>
                     <option>0.502340235 - lorem ipsum dolor sit amet</option>
@@ -109,46 +108,69 @@
                     <option>0.101101001 - lorem ipsum dolor sit amet</option>
                     <option>0.202020200 - lorem ipsum dolor sit amet</option>
                 </select>
-                <div class="groups-checkbox">
-                    <h2 class="filter-text">Групи:</h2>
-                    <div class="checkbox-bordered"><input type="checkbox">OK-11</div>
-                    <div class="checkbox-bordered"><input type="checkbox">OK-21</div>
-                    <div class="checkbox-bordered"><input type="checkbox">OK-31</div>
-                    <div class="checkbox-bordered"><input type="checkbox">OK-32</div>
-                    <!--  --><br><br>
-                    <button class="submit-btn"><span>Показати</span></button>
-                    <button>Скинути фільтр</button>
+                <br/>
+                <p class="throwed">5.05090308 – Монтаж, обслуговування та експлуатація апаратних засобів інформатизації</p>
+                <!--  -->
+                <h3 class="filter-text groups">Групи</h3>
+                <!--  -->
+                <div class="groups-transfer">
+                    <input type="checkbox" name="name" value="">
+                    <button class="groupTransferBtn"><a href="#box1">OK-11 (3 семестр) &duarr;</a></button>
+                    Наказ від
+                    <select>
+                        <option selected disabled>Вибрати наказ</option>
+                        <option>option</option>
+                        <option>option</option>
+                        <option>option</option>
+                    </select>
+                    <button>&rtrif; Перевести</button>
                 </div>
-                <!-- <button class="submit-btn"><span>Some</span></button> -->
-                <section class="table-subjects-section">
-
+                <!--  -->
+                <div id="box1" class="groups-transfer-inner">
+                    <button class="btn">2015</button>-<button class="btn">2016</button>
+                    <br><br>
                     <table class="table-subjects">
                         <tr>
                             <th>Дії</th>
-                            <th>Назва предмету</th>
-                            <th>К-сть предметів</th>
-                            <th>Викладач</th>
-                            <th>Екзамени</th>
-                            <th>Дпа</th>
+                            <th>Прізвище, ім'я, по батькові</th>
                         </tr>
                         <tr>
-                            <td>
-                                <select class="table-select">
-                                    <option selected disabled></option>
-                                    <option>Інформація по предмету</option>
-                                    <option><button>Видалити</button></option>
-                                </select>
-                            </td>
-                            <td>Українська мова</td>
-                            <td>4</td>
+                            <td><input type="checkbox" name="name" value=""></td>
                             <td>Хренова Гадя Петрович</td>
-                            <td>-</td>
-                            <td>1</td>
                         </tr>
                     </table>
-
-                </section>
-
+                </div>
+                <!--  -->
+                <div class="groups-transfer">
+                    <input type="checkbox" name="name" value="">
+                    <button class="groupTransferBtn"><a href="#box2">OK-11 (3 семестр) &duarr;</a></button>
+                    Наказ від
+                    <select>
+                        <option selected disabled>Вибрати наказ</option>
+                        <option>option</option>
+                        <option>option</option>
+                        <option>option</option>
+                    </select>
+                    <button>&rtrif; Перевести</button>
+                </div>
+                <!--  -->
+                <div id="box2" class="groups-transfer-inner">
+                    <button class="btn">2015</button>-<button class="btn">2016</button>
+                    <br><br>
+                    <table class="table-subjects">
+                        <tr>
+                            <th>Дії</th>
+                            <th>Прізвище, ім'я, по батькові</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="name" value=""></td>
+                            <td>Хренова Гадя Петрович</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--  -->
+                <br/><br/>
+                <button class="submit-btn"><span>Перевести</span></button>
             </section>
         </section>
 

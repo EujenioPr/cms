@@ -11,4 +11,12 @@ $(document).ready(function() {
     $("#sidebarAddSpan").toggle();
   });
 
+
+// groups-transfer-inner
+    $(function(){
+      $(".groupTransferBtn").click(function(e) {
+            $( $(this).find("a").attr('href') ).slideToggle("fast");
+        });
+    });
+// end
 });
